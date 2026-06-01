@@ -256,55 +256,87 @@
         </div>
     </section>
 
-    <!-- CERTIFICATES SECTION -->
-    <section id="certificates" class="py-24 px-4 max-w-5xl mx-auto">
+    <!-- CERTIFICATES SECTION (IMAGE CARDS UPDATED) -->
+    <section id="certificates" class="py-24 px-4 max-w-5xl mx-auto border-t border-slate-800">
         <div class="flex items-center space-x-4 mb-12">
             <h2 class="text-2xl sm:text-3xl font-bold">Chứng Chỉ & Giải Thưởng</h2>
             <div class="h-[1px] bg-slate-700 flex-grow"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Google Certificates Suite -->
-            <div class="bg-tech-card p-6 rounded-lg border border-slate-800">
-                <h3 class="text-base font-bold text-tech-accent uppercase tracking-wider mb-4"><i class="fa-brands fa-google mr-2"></i>Google Professional Certificates (05/2026)</h3>
-                <ul class="space-y-3 text-sm">
-                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
-                        <span>Google Cybersecurity Professional Certificate</span>
-                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
-                    </li>
-                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
-                        <span>Google Network Security Specialization</span>
-                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
-                    </li>
-                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
-                        <span>Google AI Professional Certificate</span>
-                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
-                    </li>
-                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
-                        <span>Google Project Management Certificate</span>
-                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
-                    </li>
-                    <li class="flex items-center justify-between pb-1">
-                        <span>Google IT Support Professional Certificate</span>
-                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
-                    </li>
-                </ul>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Award 1: Academic Award -->
+            <div class="bg-tech-card rounded-lg overflow-hidden border border-slate-700/50 flex flex-col justify-between group">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
+                    <img src="images/academic-award.jpg" alt="Academic Performance Award" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1e293b/34d399?text=Academic+Award';">
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-mono text-tech-accent">OISP - ĐH Bách Khoa TP.HCM</span>
+                    <h3 class="font-bold text-sm mt-1 text-white">Outstanding Academic Performance Award</h3>
+                    <p class="text-xs text-slate-400 mt-1">Học kỳ 2 (2024 - 2025)</p>
+                </div>
             </div>
 
-            <!-- Academic Awards -->
-            <div class="bg-tech-card p-6 rounded-lg border border-slate-800 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-base font-bold text-tech-accent uppercase tracking-wider mb-4"><i class="fa-solid fa-trophy mr-2"></i>Thành Tích Học Tập</h3>
-                    <div class="bg-slate-900 p-4 rounded border border-slate-800 mb-4">
-                        <h4 class="font-bold text-sm text-white mb-1">Outstanding Academic Performance Award</h4>
-                        <p class="text-xs text-slate-400">Học kỳ 2 (Năm học 2024-2025)</p>
-                        <p class="text-xs text-tech-accent mt-2">Cấp bởi: Văn phòng Đào tạo Quốc tế (OISP) - ĐH Bách Khoa TP.HCM</p>
-                    </div>
+            <!-- Cert 2: Google Cybersecurity -->
+            <div class="bg-tech-card rounded-lg overflow-hidden border border-slate-700/50 flex flex-col justify-between group">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
+                    <img src="images/google-cybersecurity.jpg" alt="Google Cybersecurity Certificate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1e293b/34d399?text=Cybersecurity+Cert';">
                 </div>
-                <p class="text-xs text-slate-500 italic">
-                    *Toàn bộ chứng chỉ và bảng điểm sẵn sàng được cung cấp minh chứng khi có yêu cầu từ nhà tuyển dụng.
-                </p>
+                <div class="p-5">
+                    <span class="text-xs font-mono text-tech-accent">Google via Coursera | 05/2026</span>
+                    <h3 class="font-bold text-sm mt-1 text-white">Google Cybersecurity Professional Certificate</h3>
+                    <p class="text-xs text-slate-400 mt-1">Xác thực hệ thống an ninh mạng</p>
+                </div>
             </div>
+
+            <!-- Cert 3: Google Network Security -->
+            <div class="bg-tech-card rounded-lg overflow-hidden border border-slate-700/50 flex flex-col justify-between group">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
+                    <img src="images/google-network-security.jpg" alt="Google Network Security Specialization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1e293b/34d399?text=Network+Security';">
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-mono text-tech-accent">Google via Coursera | 05/2026</span>
+                    <h3 class="font-bold text-sm mt-1 text-white">Google Network Security Specialization</h3>
+                    <p class="text-xs text-slate-400 mt-1">Bảo mật hạ tầng mạng chuyên sâu</p>
+                </div>
+            </div>
+
+            <!-- Cert 4: Google AI -->
+            <div class="bg-tech-card rounded-lg overflow-hidden border border-slate-700/50 flex flex-col justify-between group">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
+                    <img src="images/google-ai.jpg" alt="Google AI Professional Certificate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1e293b/34d399?text=Google+AI+Cert';">
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-mono text-tech-accent">Google via Coursera | 05/2026</span>
+                    <h3 class="font-bold text-sm mt-1 text-white">Google AI Professional Certificate</h3>
+                    <p class="text-xs text-slate-400 mt-1">Ứng dụng Trí tuệ nhân tạo chuyên nghiệp</p>
+                </div>
+            </div>
+
+            <!-- Cert 5: Google Project Management -->
+            <div class="bg-tech-card rounded-lg overflow-hidden border border-slate-700/50 flex flex-col justify-between group">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
+                    <img src="images/google-pm.jpg" alt="Google Project Management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1e293b/34d399?text=Project+Management';">
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-mono text-tech-accent">Google via Coursera | 05/2026</span>
+                    <h3 class="font-bold text-sm mt-1 text-white">Google Project Management Certificate</h3>
+                    <p class="text-xs text-slate-400 mt-1">Quản trị dự án chuẩn chuyên nghiệp</p>
+                </div>
+            </div>
+
+            <!-- Cert 6: Google IT Support -->
+            <div class="bg-tech-card rounded-lg overflow-hidden border border-slate-700/50 flex flex-col justify-between group">
+                <div class="relative overflow-hidden aspect-[4/3] bg-slate-900 flex items-center justify-center">
+                    <img src="images/google-it-support.jpg" alt="Google IT Support" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x450/1e293b/34d399?text=IT+Support+Cert';">
+                </div>
+                <div class="p-5">
+                    <span class="text-xs font-mono text-tech-accent">Google via Coursera | 05/2026</span>
+                    <h3 class="font-bold text-sm mt-1 text-white">Google IT Support Professional Certificate</h3>
+                    <p class="text-xs text-slate-400 mt-1">Hỗ trợ kỹ thuật CNTT nền tảng</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
