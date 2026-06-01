@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Đức Thiện | Network & Security Engineer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tech: {
+                            bg: '#0f172a',     /* slate-900 */
+                            card: '#1e293b',   /* slate-800 */
+                            accent: '#34d399', /* emerald-400 */
+                            textMain: '#f8fafc',/* slate-50 */
+                            textSub: '#94a3b8'  /* slate-400 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-tech-bg text-tech-textMain font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-tech-bg/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-tech-accent">TDT<span class="text-white">.devsec</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-tech-accent transition-colors">Giới Thiệu</a>
+                <a href="#skills" class="hover:text-tech-accent transition-colors">Kỹ Năng</a>
+                <a href="#projects" class="hover:text-tech-accent transition-colors">Dự Án</a>
+                <a href="#certificates" class="hover:text-tech-accent transition-colors">Chứng Chỉ</a>
+                <a href="#contact" class="hover:text-tech-accent transition-colors">Liên Hệ</a>
+            </div>
+            <a href="CV_TranDucThien.pdf" target="_blank" class="bg-transparent border border-tech-accent text-tech-accent hover:bg-tech-accent hover:text-tech-bg px-4 py-2 rounded-md text-sm font-medium transition-all duration-300">
+                <i class="fa-solid fa-download mr-2"></i>Tải CV (PDF)
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center justify-center pt-16 px-4">
+        <div class="max-w-4xl text-center">
+            <p class="text-tech-accent font-mono mb-3 tracking-widest text-sm sm:text-base">XIN CHÀO, TÔI LÀ</p>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">TRẦN ĐỨC THIỆN</h1>
+            <h2 class="text-xl sm:text-3xl font-bold text-tech-textSub mb-6">Network & Security Engineer</h2>
+            <p class="text-base sm:text-lg text-tech-textSub max-w-2xl mx-auto mb-8 leading-relaxed">
+                Kỹ sư Mạng & Bảo mật với tư duy lập trình hệ thống vững chắc. Đam mê thiết kế hạ tầng mạng an toàn, tối ưu hóa hệ thống giám sát an ninh (SIEM) và phát triển các giải pháp bảo mật toàn diện.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-tech-accent text-tech-bg font-semibold px-6 py-3 rounded-md hover:opacity-90 transition-opacity">Xem Dự Án</a>
+                <a href="#contact" class="bg-slate-800 text-white font-semibold px-6 py-3 rounded-md border border-slate-700 hover:bg-slate-700 transition-colors">Liên Hệ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & STRENGTHS SECTION -->
+    <section id="about" class="py-24 px-4 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center space-x-4 mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold">Giới Thiệu & Điểm Mạnh</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-lg font-semibold text-tech-accent mb-4"><i class="fa-solid fa-bullseye mr-2"></i>Mục Tiêu Nghề Nghiệp</h3>
+                    <p class="text-tech-textSub leading-relaxed mb-4">
+                        Tận dụng nền tảng vững chắc về kiến trúc hạ tầng mạng Cisco và năng lực phân tích an ninh mạng để vận hành, bảo vệ các hệ thống doanh nghiệp trọng yếu. 
+                    </p>
+                    <p class="text-tech-textSub leading-relaxed">
+                        Mục tiêu ngắn hạn là cống hiến tại các vị trí Kỹ sư An ninh mạng / SOC Analyst, đồng thời không ngừng phát triển kỹ năng lập trình tự động hóa hệ thống để hướng tới vai trò chuyên gia <strong>DevSecOps</strong> trong tương lai.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-tech-accent mb-4"><i class="fa-solid fa-star mr-2"></i>Điểm Mạnh Cốt Lõi</h3>
+                    <ul class="space-y-3 text-tech-textSub">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-tech-accent mt-1 mr-3 text-sm"></i><span><strong>Khả năng tự học xuất sắc:</strong> Đạt bộ 5 chứng chỉ chuyên nghiệp của Google về Bảo mật, Mạng, AI và Quản trị dự án chỉ trong thời gian ngắn.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-tech-accent mt-1 mr-3 text-sm"></i><span><strong>Tư duy lập trình hệ thống:</strong> Không chỉ cấu hình hạ tầng, còn có khả năng tự xây dựng công cụ, dashboard phân tích log realtime bằng React và FastAPI.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-tech-accent mt-1 mr-3 text-sm"></i><span><strong>Phân tích & Giải quyết vấn đề:</strong> Có kinh nghiệm thực chiến trong phân tích log (Windows Event Logs) để chủ động phát hiện các mối đe dọa.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24 px-4 max-w-5xl mx-auto">
+        <div class="flex items-center space-x-4 mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold">Kỹ Năng Kỹ Thuật</h2>
+            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Skill Card 1 -->
+            <div class="bg-tech-card p-6 rounded-lg border border-slate-700/50">
+                <div class="text-tech-accent text-2xl mb-4"><i class="fa-solid fa-network-wired"></i></div>
+                <h3 class="text-lg font-bold mb-3">Network Engineering</h3>
+                <p class="text-sm text-tech-textSub mb-4">Thiết kế, giả lập và cấu hình hạ tầng mạng doanh nghiệp vững chắc.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Cisco Packet Tracer</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">OSPF Routing</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">VLAN</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Architecture</span>
+                </div>
+            </div>
+
+            <!-- Skill Card 2 -->
+            <div class="bg-tech-card p-6 rounded-lg border border-slate-700/50">
+                <div class="text-tech-accent text-2xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 class="text-lg font-bold mb-3">Cybersecurity</h3>
+                <p class="text-sm text-tech-textSub mb-4">Giám sát an ninh, phân tích mã độc và phát hiện đe dọa hệ thống.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Network Security</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Linux</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Log Analysis</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Threat Visualization</span>
+                </div>
+            </div>
+
+            <!-- Skill Card 3 -->
+            <div class="bg-tech-card p-6 rounded-lg border border-slate-700/50">
+                <div class="text-tech-accent text-2xl mb-4"><i class="fa-solid fa-code"></i></div>
+                <h3 class="text-lg font-bold mb-3">Fullstack Development</h3>
+                <p class="text-sm text-tech-textSub mb-4">Phát triển ứng dụng Web hiệu năng cao, tích hợp WebSockets thời gian thực.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">FastAPI</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">React</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Node.js</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">Python</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">PHP</span>
+                    <span class="bg-slate-900 text-xs text-tech-accent px-2.5 py-1 rounded font-mono">WebSockets</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages & Education Mini Bar -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-tech-card/40 p-6 rounded-lg border border-slate-800">
+            <div>
+                <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">Học Vấn</h4>
+                <p class="text-base font-bold">Đại học Bách Khoa TP.HCM (HCMUT)</p>
+                <p class="text-sm text-tech-textSub">Cử nhân Khoa học Máy tính (2023 - Hiện tại)</p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">Ngoại Ngữ</h4>
+                <div class="flex space-x-6 text-sm">
+                    <p>🇬🇧 <strong>Tiếng Anh:</strong> Trung cấp</p>
+                    <p>🇯🇵 <strong>Tiếng Nhật:</strong> Ứng viên JLPT N3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 px-4 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center space-x-4 mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold">Dự Án Thực Tế</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Project 1: SIEM -->
+                <div class="bg-tech-card rounded-xl overflow-hidden border border-slate-700/60 grid grid-cols-1 lg:grid-cols-12 gap-6 p-6">
+                    <div class="lg:col-span-4 flex flex-col justify-center bg-slate-900 p-6 rounded-lg border border-slate-800">
+                        <span class="text-xs font-mono text-tech-accent mb-2">2025-12 ~ 2026-02</span>
+                        <h3 class="text-xl font-bold mb-2">Enterprise Security Monitoring Dashboard (Mini-SIEM)</h3>
+                        <p class="text-xs text-slate-400 mb-4">Vai trò: Security Developer</p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://github.com/tranducthien2701" target="_blank" class="text-tech-accent hover:underline"><i class="fa-brands fa-github mr-1"></i> Source Code</a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-8 flex flex-col justify-between">
+                        <div>
+                            <p class="text-sm text-tech-textSub mb-4">
+                                Xây dựng hệ thống giám sát an ninh doanh nghiệp thời gian thực. Hệ thống có khả năng thu thập, phân tích Windows Event Logs nhằm phát hiện nhanh chóng các hành vi tấn công dò mật khẩu (brute-force) hoặc truy cập trái phép.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+                                <li>Phát triển trọn vẹn kiến trúc Full-stack bằng FastAPI (Backend) và React (Frontend).</li>
+                                <li>Thiết kế cơ chế cảnh báo dựa trên luật (Rule-based alerting) để phát hiện bất thường hành vi.</li>
+                                <li>Ứng dụng WebSockets để truyền tải dữ liệu cảnh báo an ninh tức thời lên dashboard mà không cần reload trang.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">FastAPI</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">React</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">WebSockets</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">Log Analysis</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Enterprise Network -->
+                <div class="bg-tech-card rounded-xl overflow-hidden border border-slate-700/60 grid grid-cols-1 lg:grid-cols-12 gap-6 p-6">
+                    <div class="lg:col-span-4 flex flex-col justify-center bg-slate-900 p-6 rounded-lg border border-slate-800">
+                        <span class="text-xs font-mono text-tech-accent mb-2">2025-11 ~ 2026-01</span>
+                        <h3 class="text-xl font-bold mb-2">Enterprise Network Design & Simulation</h3>
+                        <p class="text-xs text-slate-400 mb-4">Dự án tại Đại học Bách Khoa (HCMUT)</p>
+                    </div>
+                    <div class="lg:col-span-8 flex flex-col justify-between">
+                        <div>
+                            <p class="text-sm text-tech-textSub mb-4">
+                                Thiết kế, giả lập và kiểm thử mô hình kiến trúc hạ tầng mạng bảo mật, tính sẵn sàng cao (High Availability) cho một doanh nghiệp quy mô lớn gồm 1 trụ sở chính (7 tầng, 120 máy trạm) và 2 chi nhánh độc lập.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+                                <li>Triển khai mô hình mạng 3 lớp chuẩn doanh nghiệp (Core / Distribution / Access).</li>
+                                <li>Phân tách các vùng mạng nghiêm ngặt bằng VLAN bao gồm vùng Inside, Outside và DMZ bảo vệ server.</li>
+                                <li>Cấu hình giao thức định tuyến động OSPF, cơ chế cân bằng tải và dự phòng HSRP, thiết lập kênh truyền bảo mật Site-to-Site VPN nối các chi nhánh.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">Cisco Packet Tracer</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">OSPF</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">HSRP</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">ACL</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">Site-to-Site VPN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Cloud Arena -->
+                <div class="bg-tech-card rounded-xl overflow-hidden border border-slate-700/60 grid grid-cols-1 lg:grid-cols-12 gap-6 p-6">
+                    <div class="lg:col-span-4 flex flex-col justify-center bg-slate-900 p-6 rounded-lg border border-slate-800">
+                        <span class="text-xs font-mono text-tech-accent mb-2">2026-04 ~ 2026-05</span>
+                        <h3 class="text-xl font-bold mb-2">Cloud-Arena E-commerce Platform</h3>
+                        <p class="text-xs text-slate-400 mb-4">Vai trò: Fullstack Web Developer</p>
+                    </div>
+                    <div class="lg:col-span-8 flex flex-col justify-between">
+                        <div>
+                            <p class="text-sm text-tech-textSub mb-4">
+                                Xây dựng nền tảng thương mại điện tử tùy chỉnh áp dụng mô hình kiến trúc PHP MVC, tập trung vào trải nghiệm mượt mà phía client và hệ thống quản trị chặt chẽ phía sau.
+                            </p>
+                            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+                                <li>Phát triển bộ danh mục sản phẩm thông minh tích hợp bộ lọc tìm kiếm nâng cao và mô-đun giỏ hàng tối ưu.</li>
+                                <li>Thiết kế hệ thống Admin Dashboard quản lý kho hàng và xử lý trạng thái đơn hàng (CRUD Operations).</li>
+                                <li>Xây dựng cơ chế kiểm định dữ liệu nghiêm ngặt cả ở Client-side và Server-side nhằm ngăn chặn các lỗ hổng Injection bảo vệ an toàn dữ liệu.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">PHP MVC</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">PostgreSQL</span>
+                            <span class="bg-slate-900 text-xs text-slate-400 px-2 py-1 rounded">Data Validation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="py-24 px-4 max-w-5xl mx-auto">
+        <div class="flex items-center space-x-4 mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold">Chứng Chỉ & Giải Thưởng</h2>
+            <div class="h-[1px] bg-slate-700 flex-grow"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Google Certificates Suite -->
+            <div class="bg-tech-card p-6 rounded-lg border border-slate-800">
+                <h3 class="text-base font-bold text-tech-accent uppercase tracking-wider mb-4"><i class="fa-brands fa-google mr-2"></i>Google Professional Certificates (05/2026)</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                        <span>Google Cybersecurity Professional Certificate</span>
+                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
+                    </li>
+                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                        <span>Google Network Security Specialization</span>
+                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
+                    </li>
+                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                        <span>Google AI Professional Certificate</span>
+                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
+                    </li>
+                    <li class="flex items-center justify-between border-b border-slate-700/50 pb-2">
+                        <span>Google Project Management Certificate</span>
+                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
+                    </li>
+                    <li class="flex items-center justify-between pb-1">
+                        <span>Google IT Support Professional Certificate</span>
+                        <span class="text-xs bg-slate-900 px-2 py-0.5 rounded text-slate-400">Verified</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Academic Awards -->
+            <div class="bg-tech-card p-6 rounded-lg border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-base font-bold text-tech-accent uppercase tracking-wider mb-4"><i class="fa-solid fa-trophy mr-2"></i>Thành Tích Học Tập</h3>
+                    <div class="bg-slate-900 p-4 rounded border border-slate-800 mb-4">
+                        <h4 class="font-bold text-sm text-white mb-1">Outstanding Academic Performance Award</h4>
+                        <p class="text-xs text-slate-400">Học kỳ 2 (Năm học 2024-2025)</p>
+                        <p class="text-xs text-tech-accent mt-2">Cấp bởi: Văn phòng Đào tạo Quốc tế (OISP) - ĐH Bách Khoa TP.HCM</p>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-500 italic">
+                    *Toàn bộ chứng chỉ và bảng điểm sẵn sàng được cung cấp minh chứng khi có yêu cầu từ nhà tuyển dụng.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-4 bg-slate-900 border-t border-slate-800 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Sẵn Sàng Cho Các Cơ Hội Mới</h2>
+            <p class="text-tech-textSub mb-8 text-sm sm:text-base">
+                Tôi hiện đang tìm kiếm cơ hội thực tập hoặc vị trí chính thức trong lĩnh vực Network, Security và DevSecOps. Hãy kết nối với tôi ngay hôm nay!
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-xl mb-10">
+                <a href="mailto:tranthien2712005@gmail.com" class="text-slate-400 hover:text-tech-accent transition-colors" title="Email"><i class="fa-solid fa-envelope mr-2"></i><span class="text-sm">tranthien2712005@gmail.com</span></a>
+                <a href="tel:0372220175" class="text-slate-400 hover:text-tech-accent transition-colors" title="Phone"><i class="fa-solid fa-phone mr-2"></i><span class="text-sm">0372220175</span></a>
+            </div>
+
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="https://github.com/tranducthien2701" target="_blank" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tranducthien0" target="_blank" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-tech-bg py-6 text-center text-xs text-slate-600 border-t border-slate-900">
+        <p>&copy; 2026 Trần Đức Thiện. Built with HTML & Tailwind CSS. Hosted on GitHub.</p>
+    </footer>
+
+</body>
+</html>
